@@ -155,7 +155,7 @@
         
         /* Hero Section */
         .hero {
-            background: linear-gradient(135deg, rgba(30,58,138,0.95), rgba(30,64,175,0.9)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect fill="%231e3a8a"[...]
+            background: linear-gradient(135deg, rgba(30,58,138,0.95), rgba(30,64,175,0.9)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect fill="%231e3a8a" width="100" height="100"/><circle fill="%231e40af" cx="20" cy="20" r="2"/><circle fill="%231e40af" cx="60" cy="60" r="3"/><circle fill="%231e40af" cx="80" cy="30" r="2"/></svg>');
             background-size: cover;
             color: var(--white);
             padding: 120px 0;
@@ -1009,47 +1009,56 @@
                             <a href="mailto:solforeignemployment@gmail.com">solforeignemployment@gmail.com</a>
                         </div>
                     </div>
-
+                    
                     <div class="contact-item">
                         <i class="fab fa-whatsapp"></i>
                         <div>
                             <h4>WhatsApp</h4>
-                            <a href="https://wa.me/48739621505" target="_blank">+48 73 962 1505</a>
+                            <a href="https://wa.me/48739621505" target="_blank">+48 739 621 505</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Working Hours</h4>
+                            <p>Monday - Saturday: 8:00 AM - 6:00 PM<br>Sunday: Closed</p>
                         </div>
                     </div>
                 </div>
                 
                 <div class="contact-form">
-                    <form>
+                    <h3 style="margin-bottom: 25px; color: var(--primary);">Send Us a Message</h3>
+                    <form action="mailto:solforeignemployment@gmail.com" method="post" enctype="text/plain">
                         <div class="form-group">
-                            <label for="name">Full Name</label>
-                            <input type="text" id="name" name="name" required>
+                            <label>Your Name</label>
+                            <input type="text" name="name" placeholder="Enter your full name" required>
                         </div>
                         <div class="form-group">
-                            <label for="email">Email Address</label>
-                            <input type="email" id="email" name="email" required>
+                            <label>Email Address</label>
+                            <input type="email" name="email" placeholder="Enter your email" required>
                         </div>
                         <div class="form-group">
-                            <label for="phone">Phone Number</label>
-                            <input type="tel" id="phone" name="phone" required>
+                            <label>Phone Number</label>
+                            <input type="tel" name="phone" placeholder="Enter your phone number" required>
                         </div>
                         <div class="form-group">
-                            <label for="service">Service Required</label>
-                            <select id="service" name="service" required>
-                                <option>Select a service...</option>
-                                <option>Live-in Housemaids</option>
-                                <option>Nanny & Childcare</option>
-                                <option>Elderly Care</option>
-                                <option>Visa & Documentation</option>
-                                <option>Medical Screening</option>
-                                <option>Pre-Departure Training</option>
+                            <label>I am a</label>
+                            <select name="type" required>
+                                <option value="">Select...</option>
+                                <option value="saudi_employer">Saudi Employer / Family</option>
+                                <option value="housemaid">Housemaid Candidate</option>
+                                <option value="agent">Recruitment Agent</option>
+                                <option value="other">Other</option>
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" required></textarea>
+                            <label>Message</label>
+                            <textarea name="message" placeholder="Tell us about your requirements..." required></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary">Send Inquiry</button>
+                        <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
                     </form>
                 </div>
             </div>
@@ -1061,13 +1070,13 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
-                    <h3>Sol Foreign Employment Agency P.L.C</h3>
-                    <p>Your trusted partner for professional Ethiopian housemaid recruitment and placement in Saudi Arabia. Fully licensed, ethical, and committed to excellence.</p>
+                    <h3><i class="fas fa-handshake" style="margin-right: 10px; color: var(--secondary-light);"></i>Sol Foreign Employment</h3>
+                    <p>Your trusted partner for Ethiopian housemaid recruitment to Saudi Arabia. Licensed, ethical, and committed to excellence in domestic worker placement.</p>
                     <div class="social-links">
-                        <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
-                        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://wa.me/48739621505" title="WhatsApp" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://wa.me/48739621505" target="_blank"><i class="fab fa-whatsapp"></i></a>
                     </div>
                 </div>
                 <div class="footer-links">
@@ -1077,37 +1086,55 @@
                         <li><a href="#about">About Us</a></li>
                         <li><a href="#services">Services</a></li>
                         <li><a href="#process">Process</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-links">
                     <h4>Services</h4>
                     <ul>
-                        <li><a href="#services">Live-in Housemaids</a></li>
-                        <li><a href="#services">Nanny Services</a></li>
-                        <li><a href="#services">Elderly Care</a></li>
-                        <li><a href="#services">Visa Support</a></li>
+                        <li><a href="#">Live-in Housemaids</a></li>
+                        <li><a href="#">Nanny Services</a></li>
+                        <li><a href="#">Elderly Care</a></li>
+                        <li><a href="#">Visa Processing</a></li>
+                        <li><a href="#">Pre-Departure Training</a></li>
                     </ul>
                 </div>
                 <div class="footer-links">
                     <h4>Contact</h4>
                     <ul>
-                        <li><a href="tel:+251966682788">+251 96 668 2788</a></li>
-                        <li><a href="mailto:solforeignemployment@gmail.com">Email Us</a></li>
-                        <li><a href="https://wa.me/48739621505" target="_blank">WhatsApp</a></li>
-                        <li>Addis Ababa, Ethiopia</li>
+                        <li><a href="tel:+251966682788"><i class="fas fa-phone" style="margin-right: 8px;"></i>+251 96 668 2788</a></li>
+                        <li><a href="mailto:solforeignemployment@gmail.com"><i class="fas fa-envelope" style="margin-right: 8px;"></i>solforeignemployment@gmail.com</a></li>
+                        <li><a href="#"><i class="fas fa-map-marker-alt" style="margin-right: 8px;"></i>Addis Ababa, Ethiopia</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Sol Foreign Employment Agency P.L.C. All rights reserved. | Licensed Recruitment Agency</p>
+                <p>© 2026 Sol Foreign Employment Agency P.L.C. All Rights Reserved. | Licensed Ethiopian Recruitment Agency</p>
             </div>
         </div>
     </footer>
 
-    <!-- WhatsApp Float Button -->
-    <a href="https://wa.me/48739621505" class="whatsapp-float" title="Chat on WhatsApp" target="_blank">
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/48739621505" class="whatsapp-float" target="_blank" title="Chat on WhatsApp">
         <i class="fab fa-whatsapp"></i>
     </a>
+
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu').addEventListener('click', function() {
+            alert('Mobile menu - Please view on desktop or contact us via WhatsApp for assistance.');
+        });
+    </script>
 
 </body>
 </html>
