@@ -155,7 +155,7 @@
         
         /* Hero Section */
         .hero {
-            background: linear-gradient(135deg, rgba(30,58,138,0.95), rgba(30,64,175,0.9)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect fill="%231e3a8a" width="100" height="100"/><circle fill="%231e40af" cx="20" cy="20" r="2"/><circle fill="%231e40af" cx="60" cy="60" r="3"/><circle fill="%231e40af" cx="80" cy="30" r="2"/></svg>');
+            background: linear-gradient(135deg, rgba(30,58,138,0.95), rgba(30,64,175,0.9)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect fill="%231e3a8a"[...]
             background-size: cover;
             color: var(--white);
             padding: 120px 0;
@@ -786,7 +786,7 @@
             <h2>Trusted Ethiopian Housemaids<br>for Saudi Arabia</h2>
             <p>Your reliable partner for professional domestic worker recruitment. Licensed, ethical, and committed to connecting Saudi families with skilled Ethiopian housemaids.</p>
             <div class="hero-buttons">
-                <a href="https://wa.me/48737621505" class="btn btn-primary" target="_blank">
+                <a href="https://wa.me/48739621505" class="btn btn-primary" target="_blank">
                     <i class="fab fa-whatsapp"></i> Chat on WhatsApp
                 </a>
                 <a href="tel:+251966682788" class="btn btn-outline">
@@ -870,7 +870,7 @@
                 <div class="feature-image">
                     <h3>Ready to Hire?</h3>
                     <p style="opacity: 0.9; margin-bottom: 10px;">Get professional Ethiopian housemaids for your Saudi home. Fast, reliable, and fully compliant.</p>
-                    <a href="https://wa.me/48737621505" class="btn btn-primary" target="_blank">
+                    <a href="https://wa.me/48739621505" class="btn btn-primary" target="_blank">
                         <i class="fab fa-whatsapp"></i> Start Hiring Now
                     </a>
                 </div>
@@ -1009,56 +1009,47 @@
                             <a href="mailto:solforeignemployment@gmail.com">solforeignemployment@gmail.com</a>
                         </div>
                     </div>
-                    
+
                     <div class="contact-item">
                         <i class="fab fa-whatsapp"></i>
                         <div>
                             <h4>WhatsApp</h4>
-                            <a href="https://wa.me/48737621505" target="_blank">+48 737 621 505</a>
-                        </div>
-                    </div>
-                    
-                    <div class="contact-item">
-                        <i class="fas fa-clock"></i>
-                        <div>
-                            <h4>Working Hours</h4>
-                            <p>Monday - Saturday: 8:00 AM - 6:00 PM<br>Sunday: Closed</p>
+                            <a href="https://wa.me/48739621505" target="_blank">+48 73 962 1505</a>
                         </div>
                     </div>
                 </div>
                 
                 <div class="contact-form">
-                    <h3 style="margin-bottom: 25px; color: var(--primary);">Send Us a Message</h3>
-                    <form action="mailto:solforeignemployment@gmail.com" method="post" enctype="text/plain">
+                    <form>
                         <div class="form-group">
-                            <label>Your Name</label>
-                            <input type="text" name="name" placeholder="Enter your full name" required>
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
                         </div>
                         <div class="form-group">
-                            <label>Email Address</label>
-                            <input type="email" name="email" placeholder="Enter your email" required>
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
                         </div>
                         <div class="form-group">
-                            <label>Phone Number</label>
-                            <input type="tel" name="phone" placeholder="Enter your phone number" required>
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required>
                         </div>
                         <div class="form-group">
-                            <label>I am a</label>
-                            <select name="type" required>
-                                <option value="">Select...</option>
-                                <option value="saudi_employer">Saudi Employer / Family</option>
-                                <option value="housemaid">Housemaid Candidate</option>
-                                <option value="agent">Recruitment Agent</option>
-                                <option value="other">Other</option>
+                            <label for="service">Service Required</label>
+                            <select id="service" name="service" required>
+                                <option>Select a service...</option>
+                                <option>Live-in Housemaids</option>
+                                <option>Nanny & Childcare</option>
+                                <option>Elderly Care</option>
+                                <option>Visa & Documentation</option>
+                                <option>Medical Screening</option>
+                                <option>Pre-Departure Training</option>
                             </select>
                         </div>
                         <div class="form-group">
-                            <label>Message</label>
-                            <textarea name="message" placeholder="Tell us about your requirements..." required></textarea>
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" required></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">
-                            <i class="fas fa-paper-plane"></i> Send Message
-                        </button>
+                        <button type="submit" class="btn btn-primary">Send Inquiry</button>
                     </form>
                 </div>
             </div>
@@ -1070,13 +1061,13 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
-                    <h3><i class="fas fa-handshake" style="margin-right: 10px; color: var(--secondary-light);"></i>Sol Foreign Employment</h3>
-                    <p>Your trusted partner for Ethiopian housemaid recruitment to Saudi Arabia. Licensed, ethical, and committed to excellence in domestic worker placement.</p>
+                    <h3>Sol Foreign Employment Agency P.L.C</h3>
+                    <p>Your trusted partner for professional Ethiopian housemaid recruitment and placement in Saudi Arabia. Fully licensed, ethical, and committed to excellence.</p>
                     <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="https://wa.me/48737621505" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://wa.me/48739621505" title="WhatsApp" target="_blank"><i class="fab fa-whatsapp"></i></a>
                     </div>
                 </div>
                 <div class="footer-links">
@@ -1086,55 +1077,37 @@
                         <li><a href="#about">About Us</a></li>
                         <li><a href="#services">Services</a></li>
                         <li><a href="#process">Process</a></li>
-                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="footer-links">
                     <h4>Services</h4>
                     <ul>
-                        <li><a href="#">Live-in Housemaids</a></li>
-                        <li><a href="#">Nanny Services</a></li>
-                        <li><a href="#">Elderly Care</a></li>
-                        <li><a href="#">Visa Processing</a></li>
-                        <li><a href="#">Pre-Departure Training</a></li>
+                        <li><a href="#services">Live-in Housemaids</a></li>
+                        <li><a href="#services">Nanny Services</a></li>
+                        <li><a href="#services">Elderly Care</a></li>
+                        <li><a href="#services">Visa Support</a></li>
                     </ul>
                 </div>
                 <div class="footer-links">
                     <h4>Contact</h4>
                     <ul>
-                        <li><a href="tel:+251966682788"><i class="fas fa-phone" style="margin-right: 8px;"></i>+251 96 668 2788</a></li>
-                        <li><a href="mailto:solforeignemployment@gmail.com"><i class="fas fa-envelope" style="margin-right: 8px;"></i>solforeignemployment@gmail.com</a></li>
-                        <li><a href="#"><i class="fas fa-map-marker-alt" style="margin-right: 8px;"></i>Addis Ababa, Ethiopia</a></li>
+                        <li><a href="tel:+251966682788">+251 96 668 2788</a></li>
+                        <li><a href="mailto:solforeignemployment@gmail.com">Email Us</a></li>
+                        <li><a href="https://wa.me/48739621505" target="_blank">WhatsApp</a></li>
+                        <li>Addis Ababa, Ethiopia</li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>© 2026 Sol Foreign Employment Agency P.L.C. All Rights Reserved. | Licensed Ethiopian Recruitment Agency</p>
+                <p>&copy; 2024 Sol Foreign Employment Agency P.L.C. All rights reserved. | Licensed Recruitment Agency</p>
             </div>
         </div>
     </footer>
 
-    <!-- WhatsApp Float -->
-    <a href="https://wa.me/48739621505" class="whatsapp-float" target="_blank" title="Chat on WhatsApp">
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/48739621505" class="whatsapp-float" title="Chat on WhatsApp" target="_blank">
         <i class="fab fa-whatsapp"></i>
     </a>
-
-    <script>
-        // Smooth scrolling
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-
-        // Mobile menu toggle
-        document.querySelector('.mobile-menu').addEventListener('click', function() {
-            alert('Mobile menu - Please view on desktop or contact us via WhatsApp for assistance.');
-        });
-    </script>
 
 </body>
 </html>
